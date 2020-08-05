@@ -2,8 +2,6 @@
 
 set -e
 
-cd "$(dirname "$0")/.."
-
 echo "=> Installing shutdown listener...\n"
 sudo cp listen-for-shutdown.py /usr/local/bin/
 sudo chmod +x /usr/local/bin/listen-for-shutdown.py
