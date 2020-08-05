@@ -1,6 +1,8 @@
-# pi-power-button
+# Rpi_Power-Button
 
-Scripts used in our official [Raspberry Pi power button guide](https://howchoo.com/g/mwnlytk3zmm/how-to-add-a-power-button-to-your-raspberry-pi).
+Original script is from ZLevine -> 'https://github.com/Howchoo/pi-power-button'.
+I modified it to require the button pressed for 2 seconds in order to shutdodwn. 
+The idea is to avoid accidental button presses.
 
 ## Installation
 
@@ -21,5 +23,3 @@ A full list of what you'll need can be found [here](https://howchoo.com/g/mwnlyt
 Connect the power button to Pin 5 (SCL) and Pin 6 (GND) as shown in this diagram:
 
 ![Connection Diagram](https://raw.githubusercontent.com/Howchoo/pi-power-button/master/diagrams/pinout.png)
-
-#Credits: Copied from github repo 'https://github.com/Howchoo/pi-power-button'. Original creator is ZLevine. 
