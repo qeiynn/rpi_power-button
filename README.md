@@ -6,13 +6,13 @@ Scripts used in our official [Raspberry Pi power button guide](https://howchoo.c
 
 1. [Connect to your Raspberry Pi via SSH]
 1. Clone this repo: git clone https://github.com/qeiynn/Rpi_Power-Button.git
-1. Run the setup script: ./Rpi_Power-Button/install
+1. Inside folder run the setup script: sudo bash install
 
 ## Uninstallation
 
 If you need to uninstall the power button script in order to use GPIO3 for another project or something:
 
-1. Run the uninstall script: ./Rpi_Power-Button/uninstall
+1. Inside folder run the uninstall script: sudo bash uninstall
 
 ## Hardware
 
