@@ -1,6 +1,7 @@
 # Rpi_Power-Button
 
 Python script to safely turn-off the Raspi with a use of a button. The script is waiting for an interrupt in order to trigger. This saves some cpu resources as it isn't constantly watching the Pins.
+
 The button must pressed for 2 seconds in order to shutdown. The purpose is to avoid shutdown by accidental button presses.
 
 ## Install
@@ -13,7 +14,7 @@ The button must pressed for 2 seconds in order to shutdown. The purpose is to av
 
 If you need to uninstall the power button script in order to use GPIO3 for another project or something:
 
-1. Inside folder run the uninstall script: sudo bash uninstall
+- Inside folder run the uninstall script: sudo bash uninstall
 
 ## Hardware / Wiring
 
