@@ -1,6 +1,7 @@
 # Rpi_Power-Button
 
 Original script is from ZLevine -> 'https://github.com/Howchoo/pi-power-button'.
+
 I modified it to require the button pressed for 2 seconds in order to shutdodwn. 
 The idea is to avoid accidental button presses.
 
