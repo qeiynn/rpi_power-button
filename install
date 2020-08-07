@@ -2,15 +2,15 @@
 
 set -e
 
-echo "=> Installing shutdown listener...\n"
-sudo cp listen-for-shutdown.py /usr/local/bin/
-sudo chmod +x /usr/local/bin/listen-for-shutdown.py
+echo "=> Installing shutdown-button script...\n"
+sudo cp shutdown-button.py /usr/local/bin/
+sudo chmod +x /usr/local/bin/shutdown-button.py
 
-echo "=> Starting shutdown listener...\n"
-sudo cp listen-for-shutdown.sh /etc/init.d/
-sudo chmod +x /etc/init.d/listen-for-shutdown.sh
+echo "=> Starting shutdown-button script...\n"
+sudo cp shutdown-button.sh /etc/init.d/
+sudo chmod +x /etc/init.d/shutdown-button.sh
 
-sudo update-rc.d listen-for-shutdown.sh defaults
-sudo /etc/init.d/listen-for-shutdown.sh start
+sudo update-rc.d shutdown-button.sh defaults
+sudo /etc/init.d/shutdown-button.sh start
 
-echo "Shutdown listener installed.\n"
+echo "Shutdown-button script installed.\n"
