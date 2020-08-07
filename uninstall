@@ -2,12 +2,12 @@
 
 set -e
 
-echo "=> Stopping shutdown listener...\n"
-sudo update-rc.d listen-for-shutdown.sh remove
-sudo /etc/init.d/listen-for-shutdown.sh stop
+echo "=> Deactivating shutdown-button script...\n"
+sudo update-rc.d shutdown-button.sh remove
+sudo /etc/init.d/shutdown-button.sh stop
 
-echo "=> Removing shutdown listener...\n"
-sudo rm -rf /usr/local/bin/listen-for-shutdown.py 
-sudo rm -rf /etc/init.d/listen-for-shutdown.sh 
+echo "=> Removing shutdown-button script...\n"
+sudo rm -rf /usr/local/bin/shutdown-button.py 
+sudo rm -rf /etc/init.d/shutdown-button.sh 
 
-echo "Shutdown listener uninstalled.\n"
+echo "Shutdown-button script.\n"
