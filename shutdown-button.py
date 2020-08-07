@@ -6,7 +6,7 @@ import os
 
 gpio_pin_number=3
 def Shutdown():
-    print("ta ta")
+    print("Cowabunga!")
     time.sleep(1)
     os.system("sudo shutdown -h now")
 
