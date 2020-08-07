@@ -13,15 +13,15 @@
 # Carry out specific functions when asked to by the system
 case "$1" in
   start)
-    echo "Starting listen-for-shutdown.py"
-    /usr/local/bin/listen-for-shutdown.py &
+    echo "Actiavting power-button script"
+    /usr/local/bin/shutdown-button.py &
     ;;
   stop)
     echo "Stopping listen-for-shutdown.py"
-    pkill -f /usr/local/bin/listen-for-shutdown.py
+    pkill -f /usr/local/bin/shutdown-button.py
     ;;
   *)
-    echo "Usage: /etc/init.d/listen-for-shutdown.sh {start|stop}"
+    echo "Usage: /etc/init.d/shutdown-button.sh {start|stop}"
     exit 1
     ;;
 esac
