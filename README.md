@@ -7,7 +7,7 @@ The button must pressed for 2 seconds in order to shutdown. The purpose is to av
 ## Install
 
 1. [Connect to your Raspberry Pi via SSH]
-1. Clone this repo: git clone https://github.com/qeiynn/Rpi_Power-Button.git
+1. Clone this repo: git clone https://github.com/qeiynn/rpi_power-button.git
 1. Inside folder run the setup script: sudo bash install
 
 ## Uninstall
