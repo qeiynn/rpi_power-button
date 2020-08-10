@@ -2,7 +2,7 @@
 
 import RPi.GPIO as GPIO
 import time
-import os
+import subprocess
 
 gpio_pin_number=3
 def Shutdown():
@@ -20,5 +20,4 @@ while True:
     time.sleep(2)
     if GPIO.input(gpio_pin_number) == 0:
         break
-Shutdown()
-
+subprocess.call(['shutdown', '-h', 'now'], shell=False)
