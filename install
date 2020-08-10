@@ -2,15 +2,17 @@
 
 set -e
 
-echo "=> Installing shutdown-button script...\n"
+cd "$(dirname "$0")/.."
+
+echo "=> Installing Power-Button support\n"
 sudo cp shutdown-button.py /usr/local/bin/
 sudo chmod +x /usr/local/bin/shutdown-button.py
 
-echo "=> Starting shutdown-button script...\n"
+echo "=> Activating Power-Button script...\n"
 sudo cp shutdown-button.sh /etc/init.d/
 sudo chmod +x /etc/init.d/shutdown-button.sh
 
 sudo update-rc.d shutdown-button.sh defaults
 sudo /etc/init.d/shutdown-button.sh start
 
-echo "Shutdown-button script installed.\n"
+echo "Support for shutdown button installed.\n"
