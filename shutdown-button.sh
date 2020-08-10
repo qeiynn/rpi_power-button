@@ -6,8 +6,8 @@
 # Required-Stop:     $remote_fs $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: Start python script at boot time
-# Description:       Start the Power-Button script at boot.
+# Short-Description: Start Power-Button script at boot time
+# Description:       Power-Button script activates safe shutdown by 2-3 secs button press.
 ### END INIT INFO
 
 case "$1" in
