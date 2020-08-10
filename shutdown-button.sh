@@ -1,9 +1,18 @@
 #! /bin/sh
 
-sudo systemctl stop hostap &&
+case "$1" in
+  start)
+    echo "Activating Power-Button script"
+    /usr/local/bin/shutdown-button.py &
+    ;;
+  stop)
+    echo "Deactivating Power-Button script"
+    pkill -f /usr/local/bin/shutdown-button.py
+    ;;
+  *)
+    echo "Usage: /etc/init.d/shutdown-button.sh {start|stop}"
+    exit 1
+    ;;
+esac
 
-#comment lines 61-63
-sudo sed -i '61,63 s/^/#/' /etc/dhcpcd.conf
-
-#uncomment lines 61-63 WARNING: ALSO REMOVES SPACES
-sudo sed -i "61,63 s/# *//" /etc/dhcpcd.conf
+exit 0
