@@ -5,12 +5,9 @@ import time
 import subprocess
 
 def Shutdown():
-    print("Cowabunga!")
-    time.sleep(1)
     subprocess.call(['shutdown', '-h', 'now'], shell=False)
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
 GPIO.setup(3, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 while True:
@@ -19,4 +16,7 @@ while True:
     time.sleep(2)
     if GPIO.input(3) == 0:
         break
+
+print("Cowabunga!")
+time.sleep(1)
 Shutdown()
