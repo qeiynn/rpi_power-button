@@ -5,6 +5,8 @@ import time
 import subprocess
 
 def Shutdown():
+    print("Cowabunga!")
+    time.sleep(1)
     subprocess.call(['shutdown', '-h', 'now'], shell=False)
 
 GPIO.setmode(GPIO.BCM)
@@ -15,8 +17,6 @@ while True:
     #sleep and check button again (in case of accidental button press)
     time.sleep(2)
     if GPIO.input(3) == 0:
-        print("Cowabunga!")
         break
 
-time.sleep(1)
 Shutdown()
