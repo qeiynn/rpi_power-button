@@ -8,7 +8,7 @@ gpio_pin_number=3
 def Shutdown():
     print("Cowabunga!")
     time.sleep(1)
-    os.system("sudo shutdown -h now")
+    subprocess.call(['shutdown', '-h', 'now'], shell=False)
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -20,4 +20,4 @@ while True:
     time.sleep(2)
     if GPIO.input(gpio_pin_number) == 0:
         break
-subprocess.call(['shutdown', '-h', 'now'], shell=False)
+Shutdown()
