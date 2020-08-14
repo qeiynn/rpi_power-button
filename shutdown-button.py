@@ -11,7 +11,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(3, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 while True:
-    GPIO.wait_for_edge(3, GPIO.FALLING)
+    GPIO.wait_for_edge(3, GPIO.FALLING, bouncetime=1500)
     #sleep and check button again (in case of accidental button press)
     time.sleep(2)
     if GPIO.input(3) == 0:
