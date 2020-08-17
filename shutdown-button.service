@@ -7,7 +7,7 @@ Type=simple
 Restart=always
 RestartSec=1
 User=root
-ExecStart=/usr/bin/python3 /usr/local/bin/shutdown-button.py
+ExecStart=/usr/bin/python3 /usr/local/bin/shutdown-button/shutdown-button.py
 
 [Install]
 WantedBy=multi-user.target
