@@ -31,5 +31,5 @@ Connect the power button to the GPIO's Pin 5 (SCL) and Pin 6 (GND).
       -
 (SD-card input)
       (HDMI-Input)
-```   
+``   
 
