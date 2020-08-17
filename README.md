@@ -25,7 +25,7 @@ Connect the power button to the GPIO's Pin 5 (SCL) and Pin 6 (GND).
 
 40-Pin Layout
 
-``
+```
       -
  · · |·|· · · · · · · · · · · · · · · · · 
  · · |·|· · · · · · · · · · · · · · · · · 
