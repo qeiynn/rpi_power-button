@@ -22,10 +22,8 @@ If you need to uninstall the power button script in order to use GPIO3 for anoth
 A normally-open (NO) push button is required.
 Connect the power button to the GPIO's Pin 5 (SCL) and Pin 6 (GND).
 
-``
+```
 40-Pin Layout - RPI 3b(+), 4, Zero (W)
-``
-``
     -        
 · ·|·|· · ·|·|· · · · · · · · · · · · · 
 · ·|·|· · ·|·|· · · · · · · · · · · · · 
