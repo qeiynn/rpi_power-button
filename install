@@ -8,7 +8,7 @@ sudo mkdir -p /usr/local/bin
 sudo cp shutdown-button.py /usr/local/bin
 sudo chmod +x /usr/local/bin/shutdown-button.py
 sudo cp shutdown-button.service /etc/systemd/system
-sudo systemctl enable shutdown_button.service
-sudo systemctl start shutdown_button.service
+sudo systemctl enable shutdown-button.service
+sudo systemctl start shutdown-button.service
 
 echo "Support for shutdown button activated.\n"
