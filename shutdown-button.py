@@ -15,8 +15,6 @@ while True:
     #sleep and check button again (in case of accidental button press)
     time.sleep(2)
     if GPIO.input(3) == 0:
-        subprocess.call(["sudo","bash","tmnt.sh"])
         break
 
-time.sleep(1)
 Shutdown()
