@@ -3,9 +3,11 @@
 set -e
 echo "=> Installing Power-Button support\n"
 
-sudo mkdir -p /usr/local/bin
-sudo cp shutdown-button.py /usr/local/bin
-sudo chmod +x /usr/local/bin/shutdown-button.py
+sudo mkdir -p /usr/local/bin/shutdown-button
+sudo cp shutdown-button.py /usr/local/bin/shutdown-button
+sudo chmod +x /usr/local/bin/shutdown-button/shutdown-button.py
+sudo cp tmnt.sh /usr/local/bin/shutdown-button
+sudo chmod +x /usr/local/bin/shutdown-button/tmnt.sh
 sudo cp shutdown-button.service /etc/systemd/system
 sudo systemctl enable shutdown-button.service
 sudo systemctl start shutdown-button.service
