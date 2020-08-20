@@ -1,6 +1,6 @@
 # Rpi_Power-Button
 
-Python script to safely turn-off the Raspi with a use of a button. The script is waiting for an interrupt in order to trigger. This saves some cpu resources as it isn't constantly watching the Pins.
+Python script to safely turn-off the Raspi with a use of a button. The script is waiting for an interrupt in order to trigger. This saves cpu resources as it isn't constantly watching the Pins.
 
 The button must pressed for 2 seconds in order to shutdown. The purpose is to avoid shutdown by accidental button presses.
 
