@@ -5,7 +5,7 @@ import time
 import subprocess
 
 def Shutdown():
-    subprocess.call(['shutdown', '-h', 'now'], shell=False)
+    subprocess.run(['shutdown', '-h', 'now'], shell=False)
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(3, GPIO.IN, pull_up_down=GPIO.PUD_UP)
