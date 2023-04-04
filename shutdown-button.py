@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 import time
 import subprocess
 
-def Shutdown():
+def shutdown():
     subprocess.run(['shutdown', '-h', 'now'], shell=False)
 
 GPIO.setmode(GPIO.BCM)
@@ -17,4 +17,4 @@ while True:
         break
 
 GPIO.cleanup()
-Shutdown()
+shutdown()
