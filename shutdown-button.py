@@ -16,4 +16,5 @@ while True:
     if GPIO.input(3) == 0:
         break
 
+GPIO.cleanup()
 Shutdown()
